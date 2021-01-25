@@ -1,0 +1,1152 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title "2-channel ADC PMOD"
+Date "2021-01-25"
+Rev "1.0"
+Comp "fpga-systems.ru"
+Comment1 "DUAL-MCP3201-PMOD"
+Comment2 "punzik"
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dual-mcp3201-pmod:LMV721-5 D1
+U 1 1 600E22F1
+P 6500 3100
+F 0 "D1" H 6650 3100 50  0000 L CNN
+F 1 "LMV721M5" H 6600 2700 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 6500 3100 50  0001 C CNN
+F 3 "" H 6500 3100 50  0001 C CNN
+F 4 "X" H 6500 3100 50  0001 C CNN "Spice_Primitive"
+F 5 "lmv721" H 6500 3100 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6500 3100 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "3 4 1 5 2" H 6500 3100 50  0001 C CNN "Spice_Node_Sequence"
+F 8 "spice/lmv721.lib" H 6500 3100 50  0001 C CNN "Spice_Lib_File"
+F 9 "OpAMP" H 6500 3100 50  0001 C CNN "Description"
+F 10 "SOT-23-5" H 6500 3100 50  0001 C CNN "Package"
+F 11 "LMV721M5" H 6500 3100 50  0001 C CNN "PartNumber"
+	1    6500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L dual-mcp3201-pmod:Res R5
+U 1 1 600E5333
+P 5950 3800
+F 0 "R5" V 6003 3742 60  0000 R CNN
+F 1 "9.1k" V 5897 3742 60  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5750 3775 60  0001 C CNN
+F 3 "" H 5850 3875 60  0000 C CNN
+F 4 "1%" H 5950 3875 60  0001 C CNN "Tolerance"
+F 5 "0603" H 6050 4075 60  0001 C CNN "Package"
+F 6 "-" H 6150 4175 60  0001 C CNN "PartNumber"
+F 7 "SMD Resistor" H 5950 3800 50  0001 C CNN "Description"
+	1    5950 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dual-mcp3201-pmod:Res R2
+U 1 1 600E871A
+P 5950 2850
+F 0 "R2" V 6003 2792 60  0000 R CNN
+F 1 "9.1k" V 5897 2792 60  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5750 2825 60  0001 C CNN
+F 3 "" H 5850 2925 60  0000 C CNN
+F 4 "1%" H 5950 2925 60  0001 C CNN "Tolerance"
+F 5 "0603" H 6050 3125 60  0001 C CNN "Package"
+F 6 "-" H 6150 3225 60  0001 C CNN "PartNumber"
+F 7 "SMD Resistor" H 5950 2850 50  0001 C CNN "Description"
+	1    5950 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 3000 5950 3150
+Wire Wire Line
+	6100 3150 5950 3150
+Connection ~ 5950 3150
+Wire Wire Line
+	5950 3150 5950 3650
+$Comp
+L dual-mcp3201-pmod:Res R4
+U 1 1 600E8D10
+P 4900 3450
+F 0 "R4" H 4900 3667 60  0000 C CNN
+F 1 "9.1k" H 4900 3561 60  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4700 3425 60  0001 C CNN
+F 3 "" H 4800 3525 60  0000 C CNN
+F 4 "1%" H 4900 3525 60  0001 C CNN "Tolerance"
+F 5 "0603" H 5000 3725 60  0001 C CNN "Package"
+F 6 "-" H 5100 3825 60  0001 C CNN "PartNumber"
+F 7 "SMD Resistor" H 4900 3450 50  0001 C CNN "Description"
+	1    4900 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L dual-mcp3201-pmod:Res R1
+U 1 1 600E92C0
+P 4900 2550
+F 0 "R1" H 4900 2767 60  0000 C CNN
+F 1 "6.8k" H 4900 2661 60  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4700 2525 60  0001 C CNN
+F 3 "" H 4800 2625 60  0000 C CNN
+F 4 "1%" H 4900 2625 60  0001 C CNN "Tolerance"
+F 5 "0603" H 5000 2825 60  0001 C CNN "Package"
+F 6 "-" H 5100 2925 60  0001 C CNN "PartNumber"
+F 7 "SMD Resistor" H 4900 2550 50  0001 C CNN "Description"
+	1    4900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L dual-mcp3201-pmod:Cap C1
+U 1 1 600EA8EB
+P 5200 2850
+F 0 "C1" V 5253 2742 60  0000 R CNN
+F 1 "68p" V 5147 2742 60  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5200 2850 60  0001 C CNN
+F 3 "" H 5100 2925 60  0000 C CNN
+F 4 "50V" H 5275 2775 50  0001 L CNN "Voltage"
+F 5 "NP0" H 5300 3125 50  0001 C CNN "Type"
+F 6 "-" H 5400 3225 50  0001 C CNN "Tolerance"
+F 7 "0603" H 5500 3325 50  0001 C CNN "Package"
+F 8 "-" H 5600 3425 50  0001 C CNN "PartNumber"
+F 9 "SMD Ceramic Capacitor NP0" H 5200 2850 50  0001 C CNN "Description"
+	1    5200 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 3450 5200 3450
+Wire Wire Line
+	5200 3000 5200 3450
+Connection ~ 5200 3450
+Wire Wire Line
+	5200 3450 6100 3450
+Wire Wire Line
+	5050 2550 5200 2550
+Wire Wire Line
+	7100 2550 7100 3300
+Wire Wire Line
+	7100 3300 6950 3300
+Wire Wire Line
+	5200 2700 5200 2550
+Connection ~ 5200 2550
+Wire Wire Line
+	5200 2550 7100 2550
+$Comp
+L dual-mcp3201-pmod:Cap C3
+U 1 1 600ECCAE
+P 4600 3800
+F 0 "C3" V 4653 3692 60  0000 R CNN
+F 1 "220p" V 4547 3692 60  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4600 3800 60  0001 C CNN
+F 3 "" H 4500 3875 60  0000 C CNN
+F 4 "50V" H 4675 3725 50  0001 L CNN "Voltage"
+F 5 "NP0" H 4700 4075 50  0001 C CNN "Type"
+F 6 "-" H 4800 4175 50  0001 C CNN "Tolerance"
+F 7 "0603" H 4900 4275 50  0001 C CNN "Package"
+F 8 "-" H 5000 4375 50  0001 C CNN "PartNumber"
+F 9 "SMD Ceramic Capacitor NP0" H 4600 3800 50  0001 C CNN "Description"
+	1    4600 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dual-mcp3201-pmod:Res R3
+U 1 1 600ED157
+P 4300 3450
+F 0 "R3" H 4300 3667 60  0000 C CNN
+F 1 "6.8k" H 4300 3561 60  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4100 3425 60  0001 C CNN
+F 3 "" H 4200 3525 60  0000 C CNN
+F 4 "1%" H 4300 3525 60  0001 C CNN "Tolerance"
+F 5 "0603" H 4400 3725 60  0001 C CNN "Package"
+F 6 "-" H 4500 3825 60  0001 C CNN "PartNumber"
+F 7 "SMD Resistor" H 4300 3450 50  0001 C CNN "Description"
+	1    4300 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3450 4600 3450
+Wire Wire Line
+	4600 3650 4600 3450
+Connection ~ 4600 3450
+Wire Wire Line
+	4600 3450 4750 3450
+Wire Wire Line
+	4750 2550 4600 2550
+Wire Wire Line
+	4600 2550 4600 3450
+$Comp
+L dual-mcp3201-pmod:GND #PWR03
+U 1 1 600EDF63
+P 4600 4100
+F 0 "#PWR03" H 4600 4100 30  0001 C CNN
+F 1 "GND" H 4600 4030 30  0001 C CNN
+F 2 "" H 4600 4100 60  0000 C CNN
+F 3 "" H 4600 4100 60  0000 C CNN
+	1    4600 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4100 4600 3950
+$Comp
+L dual-mcp3201-pmod:GND #PWR05
+U 1 1 600EE469
+P 5950 4100
+F 0 "#PWR05" H 5950 4100 30  0001 C CNN
+F 1 "GND" H 5950 4030 30  0001 C CNN
+F 2 "" H 5950 4100 60  0000 C CNN
+F 3 "" H 5950 4100 60  0000 C CNN
+	1    5950 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4100 5950 3950
+$Comp
+L dual-mcp3201-pmod:GND #PWR06
+U 1 1 600FA73F
+P 6450 4100
+F 0 "#PWR06" H 6450 4100 30  0001 C CNN
+F 1 "GND" H 6450 4030 30  0001 C CNN
+F 2 "" H 6450 4100 60  0000 C CNN
+F 3 "" H 6450 4100 60  0000 C CNN
+	1    6450 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 4100 6450 3700
+Connection ~ 7100 3300
+$Comp
+L dual-mcp3201-pmod:CapPol C2
+U 1 1 600FE654
+P 3800 3450
+F 0 "C2" H 3800 3717 60  0000 C CNN
+F 1 "2.2u" H 3800 3611 60  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 3800 3450 60  0001 C CNN
+F 3 "" H 3700 3525 60  0000 C CNN
+F 4 "10V" H 3875 3375 50  0001 L CNN "Voltage"
+F 5 "Tantalum" H 3900 3725 50  0001 C CNN "Type"
+F 6 "-" H 4000 3825 50  0001 C CNN "Tolerance"
+F 7 "A-CASE" H 4100 3925 50  0001 C CNN "Package"
+F 8 "293D225X9010A2TE3" H 4200 4025 50  0001 C CNN "PartNumber"
+F 9 "SMD Tantalum Capacitor" H 3800 3450 50  0001 C CNN "Description"
+	1    3800 3450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 3450 4150 3450
+$Comp
+L dual-mcp3201-pmod:CapPol C14
+U 1 1 6011AC4A
+P 6850 8450
+F 0 "C14" V 6800 8350 60  0000 R CNN
+F 1 "10u" V 6900 8350 60  0000 R CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 6850 8450 60  0001 C CNN
+F 3 "" H 6750 8525 60  0000 C CNN
+F 4 "10V" H 6925 8375 50  0001 L CNN "Voltage"
+F 5 "Tantalum" H 6950 8725 50  0001 C CNN "Type"
+F 6 "-" H 7050 8825 50  0001 C CNN "Tolerance"
+F 7 "A-CASE" H 7150 8925 50  0001 C CNN "Package"
+F 8 "293D106X9010A2TE3" H 7250 9025 50  0001 C CNN "PartNumber"
+F 9 "SMD Tantalum Capacitor" H 6850 8450 50  0001 C CNN "Description"
+	1    6850 8450
+	0    -1   1    0   
+$EndComp
+$Comp
+L dual-mcp3201-pmod:GND #PWR025
+U 1 1 6011B429
+P 6850 8850
+F 0 "#PWR025" H 6850 8850 30  0001 C CNN
+F 1 "GND" H 6850 8780 30  0001 C CNN
+F 2 "" H 6850 8850 60  0000 C CNN
+F 3 "" H 6850 8850 60  0000 C CNN
+	1    6850 8850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 8850 6850 8700
+Wire Wire Line
+	7300 3650 7300 2400
+Wire Wire Line
+	6450 2400 6450 2900
+$Comp
+L dual-mcp3201-pmod:GND #PWR04
+U 1 1 601204B2
+P 5550 4100
+F 0 "#PWR04" H 5550 4100 30  0001 C CNN
+F 1 "GND" H 5550 4030 30  0001 C CNN
+F 2 "" H 5550 4100 60  0000 C CNN
+F 3 "" H 5550 4100 60  0000 C CNN
+	1    5550 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4100 5550 3950
+Wire Wire Line
+	5550 3650 5550 3150
+Wire Wire Line
+	5550 3150 5950 3150
+$Comp
+L dual-mcp3201-pmod:+VDD_3.3V #PWR023
+U 1 1 601220B4
+P 5450 7900
+F 0 "#PWR023" H 5450 7860 30  0001 C CNN
+F 1 "+VDD_3.3V" V 5459 8008 40  0000 L CNN
+F 2 "" H 5450 7900 60  0000 C CNN
+F 3 "" H 5450 7900 60  0000 C CNN
+	1    5450 7900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dual-mcp3201-pmod:+VREF #PWR024
+U 1 1 60122934
+P 7050 7900
+F 0 "#PWR024" H 7050 7860 30  0001 C CNN
+F 1 "+VREF" V 7059 8008 40  0000 L CNN
+F 2 "" H 7050 7900 60  0000 C CNN
+F 3 "" H 7050 7900 60  0000 C CNN
+	1    7050 7900
+	0    1    1    0   
+$EndComp
+$Comp
+L dual-mcp3201-pmod:MCP3201 D2
+U 1 1 6015BE05
+P 8800 3100
+F 0 "D2" H 8800 3265 50  0000 C CNN
+F 1 "MCP3201BI/SN" H 8800 3174 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.76x4.96mm_P1.27mm" H 8800 3100 50  0001 C CNN
+F 3 "" H 8800 3100 50  0001 C CNN
+F 4 "ADC" H 8800 3100 50  0001 C CNN "Description"
+F 5 "SO-8-150" H 8800 3100 50  0001 C CNN "Package"
+F 6 "MCP3201BI/SN" H 8800 3100 50  0001 C CNN "PartNumber"
+	1    8800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L dual-mcp3201-pmod:REF30xx D5
+U 1 1 6015C5E9
+P 6100 7800
+F 0 "D5" H 6100 7965 50  0000 C CNN
+F 1 "REF3030" H 6100 7874 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6100 7800 50  0001 C CNN
+F 3 "" H 6100 7800 50  0001 C CNN
+F 4 "LDO Reference Voltage Source" H 6100 7800 50  0001 C CNN "Description"
+F 5 "SOT-23-3" H 6100 7800 50  0001 C CNN "Package"
+F 6 "REF3030" H 6100 7800 50  0001 C CNN "PartNumber"
+	1    6100 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3300 8250 3300
+$Comp
+L dual-mcp3201-pmod:GND #PWR08
+U 1 1 60164E21
+P 8100 4100
+F 0 "#PWR08" H 8100 4100 30  0001 C CNN
+F 1 "GND" H 8100 4030 30  0001 C CNN
+F 2 "" H 8100 4100 60  0000 C CNN
+F 3 "" H 8100 4100 60  0000 C CNN
+	1    8100 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 4100 8100 3500
+Wire Wire Line
+	8100 3400 8250 3400
+Wire Wire Line
+	8250 3500 8100 3500
+Connection ~ 8100 3500
+Wire Wire Line
+	8100 3500 8100 3400
+$Comp
+L dual-mcp3201-pmod:+VREF #PWR01
+U 1 1 6016D063
+P 8000 2400
+F 0 "#PWR01" H 8000 2360 30  0001 C CNN
+F 1 "+VREF" V 8009 2508 40  0000 L CNN
+F 2 "" H 8000 2400 60  0000 C CNN
+F 3 "" H 8000 2400 60  0000 C CNN
+	1    8000 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 2700 5950 2400
+Wire Wire Line
+	5950 2400 6450 2400
+Connection ~ 6450 2400
+Wire Wire Line
+	5450 7900 5700 7900
+Wire Wire Line
+	7050 7900 6850 7900
+$Comp
+L dual-mcp3201-pmod:Cap C5
+U 1 1 6019EF3D
+P 7300 3800
+F 0 "C5" V 7353 3692 60  0000 R CNN
+F 1 "0.1u" V 7247 3692 60  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7300 3800 60  0001 C CNN
+F 3 "" H 7200 3875 60  0000 C CNN
+F 4 "16V" H 7375 3725 50  0001 L CNN "Voltage"
+F 5 "X7R" H 7400 4075 50  0001 C CNN "Type"
+F 6 "-" H 7500 4175 50  0001 C CNN "Tolerance"
+F 7 "0603" H 7600 4275 50  0001 C CNN "Package"
+F 8 "-" H 7700 4375 50  0001 C CNN "PartNumber"
+F 9 "SMD Ceramic Capacitor X7R" H 7300 3800 50  0001 C CNN "Description"
+	1    7300 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dual-mcp3201-pmod:GND #PWR07
+U 1 1 6019F0F5
+P 7300 4100
+F 0 "#PWR07" H 7300 4100 30  0001 C CNN
+F 1 "GND" H 7300 4030 30  0001 C CNN
+F 2 "" H 7300 4100 60  0000 C CNN
+F 3 "" H 7300 4100 60  0000 C CNN
+	1    7300 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4100 7300 3950
+Wire Wire Line
+	7750 3200 8250 3200
+Wire Wire Line
+	7750 3200 7750 2400
+Connection ~ 7750 2400
+$Comp
+L dual-mcp3201-pmod:Cap C6
+U 1 1 601C24DC
+P 9500 3800
+F 0 "C6" V 9553 3692 60  0000 R CNN
+F 1 "0.1u" V 9447 3692 60  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9500 3800 60  0001 C CNN
+F 3 "" H 9400 3875 60  0000 C CNN
+F 4 "16V" H 9575 3725 50  0001 L CNN "Voltage"
+F 5 "X7R" H 9600 4075 50  0001 C CNN "Type"
+F 6 "-" H 9700 4175 50  0001 C CNN "Tolerance"
+F 7 "0603" H 9800 4275 50  0001 C CNN "Package"
+F 8 "-" H 9900 4375 50  0001 C CNN "PartNumber"
+F 9 "SMD Ceramic Capacitor X7R" H 9500 3800 50  0001 C CNN "Description"
+	1    9500 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dual-mcp3201-pmod:GND #PWR09
+U 1 1 601C26E0
+P 9500 4100
+F 0 "#PWR09" H 9500 4100 30  0001 C CNN
+F 1 "GND" H 9500 4030 30  0001 C CNN
+F 2 "" H 9500 4100 60  0000 C CNN
+F 3 "" H 9500 4100 60  0000 C CNN
+	1    9500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4100 9500 3950
+Wire Wire Line
+	9500 3650 9500 3200
+Wire Wire Line
+	9500 3200 9350 3200
+$Comp
+L dual-mcp3201-pmod:+VDD_3.3V #PWR02
+U 1 1 601D1BEC
+P 9500 3050
+F 0 "#PWR02" H 9500 3010 30  0001 C CNN
+F 1 "+VDD_3.3V" H 9509 3196 40  0000 C CNN
+F 2 "" H 9500 3050 60  0000 C CNN
+F 3 "" H 9500 3050 60  0000 C CNN
+	1    9500 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3050 9500 3200
+Connection ~ 9500 3200
+Wire Wire Line
+	6650 8100 6500 8100
+Wire Wire Line
+	6450 2400 7300 2400
+Connection ~ 7300 2400
+Wire Wire Line
+	7300 2400 7750 2400
+Wire Wire Line
+	6850 7900 6850 8300
+Connection ~ 6850 7900
+Wire Wire Line
+	6850 7900 6500 7900
+Wire Wire Line
+	6650 8700 6850 8700
+Wire Wire Line
+	6650 8100 6650 8700
+Connection ~ 6850 8700
+Wire Wire Line
+	6850 8700 6850 8600
+Wire Wire Line
+	7750 2400 8000 2400
+$Comp
+L dual-mcp3201-pmod:LMV721-5 D3
+U 1 1 60216B4A
+P 6500 5700
+F 0 "D3" H 6650 5700 50  0000 L CNN
+F 1 "LMV721M5" H 6600 5300 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 6500 5700 50  0001 C CNN
+F 3 "" H 6500 5700 50  0001 C CNN
+F 4 "X" H 6500 5700 50  0001 C CNN "Spice_Primitive"
+F 5 "lmv721" H 6500 5700 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 6500 5700 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "3 4 1 5 2" H 6500 5700 50  0001 C CNN "Spice_Node_Sequence"
+F 8 "spice/lmv721.lib" H 6500 5700 50  0001 C CNN "Spice_Lib_File"
+F 9 "OpAMP" H 6500 5700 50  0001 C CNN "Description"
+F 10 "SOT-23-5" H 6500 5700 50  0001 C CNN "Package"
+F 11 "LMV721M5" H 6500 5700 50  0001 C CNN "PartNumber"
+	1    6500 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L dual-mcp3201-pmod:Res R10
+U 1 1 60216D75
+P 5950 6400
+F 0 "R10" V 6003 6342 60  0000 R CNN
+F 1 "9.1k" V 5897 6342 60  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5750 6375 60  0001 C CNN
+F 3 "" H 5850 6475 60  0000 C CNN
+F 4 "1%" H 5950 6475 60  0001 C CNN "Tolerance"
+F 5 "0603" H 6050 6675 60  0001 C CNN "Package"
+F 6 "-" H 6150 6775 60  0001 C CNN "PartNumber"
+F 7 "SMD Resistor" H 5950 6400 50  0001 C CNN "Description"
+	1    5950 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dual-mcp3201-pmod:Res R7
+U 1 1 60216D82
+P 5950 5450
+F 0 "R7" V 6003 5392 60  0000 R CNN
+F 1 "9.1k" V 5897 5392 60  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5750 5425 60  0001 C CNN
+F 3 "" H 5850 5525 60  0000 C CNN
+F 4 "1%" H 5950 5525 60  0001 C CNN "Tolerance"
+F 5 "0603" H 6050 5725 60  0001 C CNN "Package"
+F 6 "-" H 6150 5825 60  0001 C CNN "PartNumber"
+F 7 "SMD Resistor" H 5950 5450 50  0001 C CNN "Description"
+	1    5950 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5950 5600 5950 5750
+Wire Wire Line
+	6100 5750 5950 5750
+Connection ~ 5950 5750
+Wire Wire Line
+	5950 5750 5950 6250
+$Comp
+L dual-mcp3201-pmod:Res R9
+U 1 1 60216D93
+P 4900 6050
+F 0 "R9" H 4900 6267 60  0000 C CNN
+F 1 "9.1k" H 4900 6161 60  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4700 6025 60  0001 C CNN
+F 3 "" H 4800 6125 60  0000 C CNN
+F 4 "1%" H 4900 6125 60  0001 C CNN "Tolerance"
+F 5 "0603" H 5000 6325 60  0001 C CNN "Package"
+F 6 "-" H 5100 6425 60  0001 C CNN "PartNumber"
+F 7 "SMD Resistor" H 4900 6050 50  0001 C CNN "Description"
+	1    4900 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L dual-mcp3201-pmod:Res R6
+U 1 1 60216DA0
+P 4900 5150
+F 0 "R6" H 4900 5367 60  0000 C CNN
+F 1 "6.8k" H 4900 5261 60  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4700 5125 60  0001 C CNN
+F 3 "" H 4800 5225 60  0000 C CNN
+F 4 "1%" H 4900 5225 60  0001 C CNN "Tolerance"
+F 5 "0603" H 5000 5425 60  0001 C CNN "Package"
+F 6 "-" H 5100 5525 60  0001 C CNN "PartNumber"
+F 7 "SMD Resistor" H 4900 5150 50  0001 C CNN "Description"
+	1    4900 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L dual-mcp3201-pmod:Cap C8
+U 1 1 60216DAF
+P 5200 5450
+F 0 "C8" V 5253 5342 60  0000 R CNN
+F 1 "68p" V 5147 5342 60  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5200 5450 60  0001 C CNN
+F 3 "" H 5100 5525 60  0000 C CNN
+F 4 "50V" H 5275 5375 50  0001 L CNN "Voltage"
+F 5 "NP0" H 5300 5725 50  0001 C CNN "Type"
+F 6 "-" H 5400 5825 50  0001 C CNN "Tolerance"
+F 7 "0603" H 5500 5925 50  0001 C CNN "Package"
+F 8 "-" H 5600 6025 50  0001 C CNN "PartNumber"
+F 9 "SMD Ceramic Capacitor NP0" H 5200 5450 50  0001 C CNN "Description"
+	1    5200 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 6050 5200 6050
+Wire Wire Line
+	5200 5600 5200 6050
+Connection ~ 5200 6050
+Wire Wire Line
+	5200 6050 6100 6050
+Wire Wire Line
+	5050 5150 5200 5150
+Wire Wire Line
+	7100 5150 7100 5900
+Wire Wire Line
+	7100 5900 6950 5900
+Wire Wire Line
+	5200 5300 5200 5150
+Connection ~ 5200 5150
+Wire Wire Line
+	5200 5150 7100 5150
+$Comp
+L dual-mcp3201-pmod:Cap C10
+U 1 1 60216DC8
+P 4600 6400
+F 0 "C10" V 4653 6292 60  0000 R CNN
+F 1 "220p" V 4547 6292 60  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4600 6400 60  0001 C CNN
+F 3 "" H 4500 6475 60  0000 C CNN
+F 4 "50V" H 4675 6325 50  0001 L CNN "Voltage"
+F 5 "NP0" H 4700 6675 50  0001 C CNN "Type"
+F 6 "-" H 4800 6775 50  0001 C CNN "Tolerance"
+F 7 "0603" H 4900 6875 50  0001 C CNN "Package"
+F 8 "-" H 5000 6975 50  0001 C CNN "PartNumber"
+F 9 "SMD Ceramic Capacitor NP0" H 4600 6400 50  0001 C CNN "Description"
+	1    4600 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dual-mcp3201-pmod:Res R8
+U 1 1 60216DD5
+P 4300 6050
+F 0 "R8" H 4300 6267 60  0000 C CNN
+F 1 "6.8k" H 4300 6161 60  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4100 6025 60  0001 C CNN
+F 3 "" H 4200 6125 60  0000 C CNN
+F 4 "1%" H 4300 6125 60  0001 C CNN "Tolerance"
+F 5 "0603" H 4400 6325 60  0001 C CNN "Package"
+F 6 "-" H 4500 6425 60  0001 C CNN "PartNumber"
+F 7 "SMD Resistor" H 4300 6050 50  0001 C CNN "Description"
+	1    4300 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 6050 4600 6050
+Wire Wire Line
+	4600 6250 4600 6050
+Connection ~ 4600 6050
+Wire Wire Line
+	4600 6050 4750 6050
+Wire Wire Line
+	4750 5150 4600 5150
+Wire Wire Line
+	4600 5150 4600 6050
+$Comp
+L dual-mcp3201-pmod:GND #PWR016
+U 1 1 60216DE5
+P 4600 6700
+F 0 "#PWR016" H 4600 6700 30  0001 C CNN
+F 1 "GND" H 4600 6630 30  0001 C CNN
+F 2 "" H 4600 6700 60  0000 C CNN
+F 3 "" H 4600 6700 60  0000 C CNN
+	1    4600 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 6700 4600 6550
+$Comp
+L dual-mcp3201-pmod:GND #PWR018
+U 1 1 60216DF0
+P 5950 6700
+F 0 "#PWR018" H 5950 6700 30  0001 C CNN
+F 1 "GND" H 5950 6630 30  0001 C CNN
+F 2 "" H 5950 6700 60  0000 C CNN
+F 3 "" H 5950 6700 60  0000 C CNN
+	1    5950 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 6700 5950 6550
+$Comp
+L dual-mcp3201-pmod:GND #PWR019
+U 1 1 60216DFB
+P 6450 6700
+F 0 "#PWR019" H 6450 6700 30  0001 C CNN
+F 1 "GND" H 6450 6630 30  0001 C CNN
+F 2 "" H 6450 6700 60  0000 C CNN
+F 3 "" H 6450 6700 60  0000 C CNN
+	1    6450 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 6700 6450 6300
+Connection ~ 7100 5900
+$Comp
+L dual-mcp3201-pmod:CapPol C9
+U 1 1 60216E0C
+P 3800 6050
+F 0 "C9" H 3800 6317 60  0000 C CNN
+F 1 "2.2u" H 3800 6211 60  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 3800 6050 60  0001 C CNN
+F 3 "" H 3700 6125 60  0000 C CNN
+F 4 "10V" H 3875 5975 50  0001 L CNN "Voltage"
+F 5 "Tantalum" H 3900 6325 50  0001 C CNN "Type"
+F 6 "-" H 4000 6425 50  0001 C CNN "Tolerance"
+F 7 "A-CASE" H 4100 6525 50  0001 C CNN "Package"
+F 8 "293D225X9010A2TE3" H 4200 6625 50  0001 C CNN "PartNumber"
+F 9 "SMD Tantalum Capacitor" H 3800 6050 50  0001 C CNN "Description"
+	1    3800 6050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 6050 4150 6050
+Wire Wire Line
+	7300 6250 7300 5000
+Wire Wire Line
+	6450 5000 6450 5500
+$Comp
+L dual-mcp3201-pmod:GND #PWR017
+U 1 1 60216E28
+P 5550 6700
+F 0 "#PWR017" H 5550 6700 30  0001 C CNN
+F 1 "GND" H 5550 6630 30  0001 C CNN
+F 2 "" H 5550 6700 60  0000 C CNN
+F 3 "" H 5550 6700 60  0000 C CNN
+	1    5550 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 6700 5550 6550
+Wire Wire Line
+	5550 6250 5550 5750
+Wire Wire Line
+	5550 5750 5950 5750
+$Comp
+L dual-mcp3201-pmod:MCP3201 D4
+U 1 1 60216E35
+P 8800 5700
+F 0 "D4" H 8800 5865 50  0000 C CNN
+F 1 "MCP3201BI/SN" H 8800 5774 50  0000 C CNN
+F 2 "Package_SO:SOP-8_3.76x4.96mm_P1.27mm" H 8800 5700 50  0001 C CNN
+F 3 "" H 8800 5700 50  0001 C CNN
+F 4 "ADC" H 8800 5700 50  0001 C CNN "Description"
+F 5 "SO-8-150" H 8800 5700 50  0001 C CNN "Package"
+F 6 "MCP3201BI/SN" H 8800 5700 50  0001 C CNN "PartNumber"
+	1    8800 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 5900 8250 5900
+$Comp
+L dual-mcp3201-pmod:GND #PWR021
+U 1 1 60216E40
+P 8100 6700
+F 0 "#PWR021" H 8100 6700 30  0001 C CNN
+F 1 "GND" H 8100 6630 30  0001 C CNN
+F 2 "" H 8100 6700 60  0000 C CNN
+F 3 "" H 8100 6700 60  0000 C CNN
+	1    8100 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 6700 8100 6100
+Wire Wire Line
+	8100 6000 8250 6000
+Wire Wire Line
+	8250 6100 8100 6100
+Connection ~ 8100 6100
+Wire Wire Line
+	8100 6100 8100 6000
+$Comp
+L dual-mcp3201-pmod:+VREF #PWR011
+U 1 1 60216E4F
+P 8000 5000
+F 0 "#PWR011" H 8000 4960 30  0001 C CNN
+F 1 "+VREF" V 8009 5108 40  0000 L CNN
+F 2 "" H 8000 5000 60  0000 C CNN
+F 3 "" H 8000 5000 60  0000 C CNN
+	1    8000 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 5300 5950 5000
+Wire Wire Line
+	5950 5000 6450 5000
+Connection ~ 6450 5000
+$Comp
+L dual-mcp3201-pmod:Cap C12
+U 1 1 60216E61
+P 7300 6400
+F 0 "C12" V 7353 6292 60  0000 R CNN
+F 1 "0.1u" V 7247 6292 60  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7300 6400 60  0001 C CNN
+F 3 "" H 7200 6475 60  0000 C CNN
+F 4 "16V" H 7375 6325 50  0001 L CNN "Voltage"
+F 5 "X7R" H 7400 6675 50  0001 C CNN "Type"
+F 6 "-" H 7500 6775 50  0001 C CNN "Tolerance"
+F 7 "0603" H 7600 6875 50  0001 C CNN "Package"
+F 8 "-" H 7700 6975 50  0001 C CNN "PartNumber"
+F 9 "SMD Ceramic Capacitor X7R" H 7300 6400 50  0001 C CNN "Description"
+	1    7300 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dual-mcp3201-pmod:GND #PWR020
+U 1 1 60216E6B
+P 7300 6700
+F 0 "#PWR020" H 7300 6700 30  0001 C CNN
+F 1 "GND" H 7300 6630 30  0001 C CNN
+F 2 "" H 7300 6700 60  0000 C CNN
+F 3 "" H 7300 6700 60  0000 C CNN
+	1    7300 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 6700 7300 6550
+Wire Wire Line
+	7750 5800 8250 5800
+Wire Wire Line
+	7750 5800 7750 5000
+Connection ~ 7750 5000
+$Comp
+L dual-mcp3201-pmod:Cap C13
+U 1 1 60216E9A
+P 9500 6400
+F 0 "C13" V 9553 6292 60  0000 R CNN
+F 1 "0.1u" V 9447 6292 60  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9500 6400 60  0001 C CNN
+F 3 "" H 9400 6475 60  0000 C CNN
+F 4 "16V" H 9575 6325 50  0001 L CNN "Voltage"
+F 5 "X7R" H 9600 6675 50  0001 C CNN "Type"
+F 6 "-" H 9700 6775 50  0001 C CNN "Tolerance"
+F 7 "0603" H 9800 6875 50  0001 C CNN "Package"
+F 8 "-" H 9900 6975 50  0001 C CNN "PartNumber"
+F 9 "SMD Ceramic Capacitor X7R" H 9500 6400 50  0001 C CNN "Description"
+	1    9500 6400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dual-mcp3201-pmod:GND #PWR022
+U 1 1 60216EA4
+P 9500 6700
+F 0 "#PWR022" H 9500 6700 30  0001 C CNN
+F 1 "GND" H 9500 6630 30  0001 C CNN
+F 2 "" H 9500 6700 60  0000 C CNN
+F 3 "" H 9500 6700 60  0000 C CNN
+	1    9500 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 6700 9500 6550
+Wire Wire Line
+	9500 6250 9500 5800
+Wire Wire Line
+	9500 5800 9350 5800
+$Comp
+L dual-mcp3201-pmod:+VDD_3.3V #PWR015
+U 1 1 60216EB1
+P 9500 5650
+F 0 "#PWR015" H 9500 5610 30  0001 C CNN
+F 1 "+VDD_3.3V" H 9509 5796 40  0000 C CNN
+F 2 "" H 9500 5650 60  0000 C CNN
+F 3 "" H 9500 5650 60  0000 C CNN
+	1    9500 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 5650 9500 5800
+Connection ~ 9500 5800
+Wire Wire Line
+	6450 5000 7300 5000
+Connection ~ 7300 5000
+Wire Wire Line
+	7300 5000 7750 5000
+Wire Wire Line
+	7750 5000 8000 5000
+$Comp
+L dual-mcp3201-pmod:JACK_3_5MM_ST_AUB_13 X1
+U 1 1 6024D91B
+P 2700 4600
+F 0 "X1" H 2458 4953 60  0000 C CNN
+F 1 "AUB-13" H 2458 4847 60  0000 C CNN
+F 2 "local:JACK_ST_AUB_13" H 3200 3000 60  0001 C CNN
+F 3 "" H 3300 3100 60  0001 C CNN
+F 4 "AUB-13" H 2458 4741 60  0001 C CNN "PartNumber"
+F 5 "3.5mm Stereo Audio Jack Receptacle" H 2458 4741 60  0000 C CNN "Description"
+	1    2700 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L dual-mcp3201-pmod:GND #PWR012
+U 1 1 6024E8A1
+P 2850 5100
+F 0 "#PWR012" H 2850 5100 30  0001 C CNN
+F 1 "GND" H 2850 5030 30  0001 C CNN
+F 2 "" H 2850 5100 60  0000 C CNN
+F 3 "" H 2850 5100 60  0000 C CNN
+	1    2850 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4900 2850 4900
+Wire Wire Line
+	2850 4900 2850 5100
+Wire Wire Line
+	2700 4600 3250 4600
+Wire Wire Line
+	3250 4600 3250 3450
+Wire Wire Line
+	3250 3450 3650 3450
+Wire Wire Line
+	2700 4800 3250 4800
+Wire Wire Line
+	3250 4800 3250 6050
+Wire Wire Line
+	3250 6050 3650 6050
+Wire Wire Line
+	12300 4450 11750 4450
+Wire Wire Line
+	12300 4650 11750 4650
+Wire Wire Line
+	12300 4750 11750 4750
+Wire Wire Line
+	13650 4450 13100 4450
+Wire Wire Line
+	13650 4650 13100 4650
+Wire Wire Line
+	13650 4750 13100 4750
+Text Label 11750 4450 0    50   ~ 0
+CS_N1
+Text Label 11750 4650 0    50   ~ 0
+MISO1
+Text Label 11750 4750 0    50   ~ 0
+SCLK1
+Text Label 13650 4450 2    50   ~ 0
+CS_N0
+Text Label 13650 4650 2    50   ~ 0
+MISO0
+Text Label 13650 4750 2    50   ~ 0
+SCLK0
+NoConn ~ 13100 4550
+NoConn ~ 12300 4550
+Wire Wire Line
+	10050 3500 9350 3500
+Wire Wire Line
+	10050 3400 9350 3400
+Wire Wire Line
+	10050 3300 9350 3300
+Text Label 10050 3500 2    50   ~ 0
+CS_N0
+Text Label 10050 3400 2    50   ~ 0
+MISO0
+Text Label 10050 3300 2    50   ~ 0
+SCLK0
+Wire Wire Line
+	10050 6100 9350 6100
+Wire Wire Line
+	10050 6000 9350 6000
+Wire Wire Line
+	10050 5900 9350 5900
+Text Label 10050 6100 2    50   ~ 0
+CS_N1
+Text Label 10050 6000 2    50   ~ 0
+MISO1
+Text Label 10050 5900 2    50   ~ 0
+SCLK1
+$Comp
+L dual-mcp3201-pmod:GND #PWR013
+U 1 1 602D5D37
+P 12000 5500
+F 0 "#PWR013" H 12000 5500 30  0001 C CNN
+F 1 "GND" H 12000 5430 30  0001 C CNN
+F 2 "" H 12000 5500 60  0000 C CNN
+F 3 "" H 12000 5500 60  0000 C CNN
+	1    12000 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 4950 12150 4950
+Wire Wire Line
+	12000 5500 12000 5350
+Wire Wire Line
+	12000 4850 12300 4850
+$Comp
+L dual-mcp3201-pmod:GND #PWR014
+U 1 1 602DA9E6
+P 13400 5500
+F 0 "#PWR014" H 13400 5500 30  0001 C CNN
+F 1 "GND" H 13400 5430 30  0001 C CNN
+F 2 "" H 13400 5500 60  0000 C CNN
+F 3 "" H 13400 5500 60  0000 C CNN
+	1    13400 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13400 5500 13400 4850
+$Comp
+L dual-mcp3201-pmod:+VDD_3.3V #PWR010
+U 1 1 602E02E4
+P 11750 4950
+F 0 "#PWR010" H 11750 4910 30  0001 C CNN
+F 1 "+VDD_3.3V" V 11759 5058 40  0000 L CNN
+F 2 "" H 11750 4950 60  0000 C CNN
+F 3 "" H 11750 4950 60  0000 C CNN
+	1    11750 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	13100 4850 13400 4850
+Wire Wire Line
+	13100 4950 13250 4950
+Wire Wire Line
+	13250 4950 13250 5150
+Wire Wire Line
+	13250 5150 12150 5150
+Wire Wire Line
+	12150 5150 12150 4950
+Connection ~ 12150 4950
+Wire Wire Line
+	12150 4950 11750 4950
+$Comp
+L dual-mcp3201-pmod:CapPol C7
+U 1 1 603049BC
+P 12700 5350
+F 0 "C7" H 12700 5500 60  0000 C CNN
+F 1 "10u" H 12700 5200 60  0000 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 12700 5350 60  0001 C CNN
+F 3 "" H 12600 5425 60  0000 C CNN
+F 4 "10V" H 12775 5275 50  0001 L CNN "Voltage"
+F 5 "Tantalum" H 12800 5625 50  0001 C CNN "Type"
+F 6 "-" H 12900 5725 50  0001 C CNN "Tolerance"
+F 7 "A-CASE" H 13000 5825 50  0001 C CNN "Package"
+F 8 "293D106X9010A2TE3" H 13100 5925 50  0001 C CNN "PartNumber"
+F 9 "SMD Tantalum Capacitor" H 12700 5350 50  0001 C CNN "Description"
+	1    12700 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12850 5350 13250 5350
+Wire Wire Line
+	13250 5350 13250 5150
+Connection ~ 13250 5150
+Wire Wire Line
+	12550 5350 12000 5350
+Connection ~ 12000 5350
+Wire Wire Line
+	12000 5350 12000 4850
+$Comp
+L dual-mcp3201-pmod:PMOD_PERIPH X2
+U 1 1 603668A6
+P 12700 4700
+F 0 "X2" H 12700 5187 60  0000 C CNN
+F 1 "PMOD_PERIPH" H 12700 5081 60  0000 C CNN
+F 2 "local:PMOD_PERIPH" H 12700 5081 60  0001 C CNN
+F 3 "" H 12700 4700 60  0000 C CNN
+F 4 "Right-angle 2.54mm pin-header" H 12700 4700 50  0001 C CNN "Description"
+F 5 "PLD-12R (PLD-80R)" H 12700 4700 50  0001 C CNN "PartNumber"
+	1    12700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L dual-mcp3201-pmod:CONN_2 X3
+U 1 1 604B4E4A
+P 2600 3550
+F 0 "X3" H 2600 3750 60  0000 C CNN
+F 1 "RIGHT" H 2600 3350 60  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2467 3781 60  0001 C CNN
+F 3 "" H 2600 3550 60  0000 C CNN
+F 4 "2.54mm 2-pin connector" H 2600 3550 50  0001 C CNN "Description"
+F 5 "PLS-2 (PLS-40)" H 2600 3550 50  0001 C CNN "PartNumber"
+	1    2600 3550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L dual-mcp3201-pmod:CONN_2 X4
+U 1 1 604BD66B
+P 2600 6150
+F 0 "X4" H 2600 6350 60  0000 C CNN
+F 1 "LEFT" H 2600 5950 60  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2467 6381 60  0001 C CNN
+F 3 "" H 2600 6150 60  0000 C CNN
+F 4 "2.54mm 2-pin connector" H 2600 6150 50  0001 C CNN "Description"
+F 5 "PLS-2 (PLS-40)" H 2600 6150 50  0001 C CNN "PartNumber"
+	1    2600 6150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 3450 3250 3450
+Connection ~ 3250 3450
+$Comp
+L dual-mcp3201-pmod:GND #PWR026
+U 1 1 604C4B90
+P 3100 3800
+F 0 "#PWR026" H 3100 3800 30  0001 C CNN
+F 1 "GND" H 3100 3730 30  0001 C CNN
+F 2 "" H 3100 3800 60  0000 C CNN
+F 3 "" H 3100 3800 60  0000 C CNN
+	1    3100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 3800 3100 3650
+Wire Wire Line
+	3100 3650 2950 3650
+Wire Wire Line
+	2950 6050 3250 6050
+Connection ~ 3250 6050
+$Comp
+L dual-mcp3201-pmod:GND #PWR027
+U 1 1 604CECE4
+P 3100 6400
+F 0 "#PWR027" H 3100 6400 30  0001 C CNN
+F 1 "GND" H 3100 6330 30  0001 C CNN
+F 2 "" H 3100 6400 60  0000 C CNN
+F 3 "" H 3100 6400 60  0000 C CNN
+	1    3100 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 6400 3100 6250
+Wire Wire Line
+	3100 6250 2950 6250
+$Comp
+L dual-mcp3201-pmod:CapPol C11
+U 1 1 60216E1E
+P 5550 6400
+F 0 "C11" V 5500 6300 60  0000 R CNN
+F 1 "2.2u" V 5600 6300 60  0000 R CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 5550 6400 60  0001 C CNN
+F 3 "" H 5450 6475 60  0000 C CNN
+F 4 "10V" H 5625 6325 50  0001 L CNN "Voltage"
+F 5 "Tantalum" H 5650 6675 50  0001 C CNN "Type"
+F 6 "-" H 5750 6775 50  0001 C CNN "Tolerance"
+F 7 "A-CASE" H 5850 6875 50  0001 C CNN "Package"
+F 8 "293D225X9010A2TE3" H 5950 6975 50  0001 C CNN "PartNumber"
+F 9 "SMD Tantalum Capacitor" H 5550 6400 50  0001 C CNN "Description"
+	1    5550 6400
+	0    -1   1    0   
+$EndComp
+$Comp
+L dual-mcp3201-pmod:CapPol C4
+U 1 1 6011FE40
+P 5550 3800
+F 0 "C4" V 5500 3700 60  0000 R CNN
+F 1 "2.2u" V 5600 3700 60  0000 R CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder" H 5550 3800 60  0001 C CNN
+F 3 "" H 5450 3875 60  0000 C CNN
+F 4 "10V" H 5625 3725 50  0001 L CNN "Voltage"
+F 5 "Tantalum" H 5650 4075 50  0001 C CNN "Type"
+F 6 "-" H 5750 4175 50  0001 C CNN "Tolerance"
+F 7 "A-CASE" H 5850 4275 50  0001 C CNN "Package"
+F 8 "293D225X9010A2TE3" H 5950 4375 50  0001 C CNN "PartNumber"
+F 9 "SMD Tantalum Capacitor" H 5550 3800 50  0001 C CNN "Description"
+	1    5550 3800
+	0    -1   1    0   
+$EndComp
+$EndSCHEMATC

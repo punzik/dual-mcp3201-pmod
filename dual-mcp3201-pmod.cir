@@ -1,0 +1,21 @@
+.title KiCad schematic
+.include "spice/lmv721.lib"
+XD1 Net-_D1-Pad3_ Net-_C3-Pad1_ OUT Net-_D1-Pad5_ GND lmv721
+R7 GND Net-_D1-Pad3_ 10k
+R6 Net-_D1-Pad3_ Net-_D1-Pad5_ 10k
+R5 Net-_C2-Pad2_ Net-_C3-Pad1_ 9.1k
+R4 Net-_C2-Pad2_ OUT 6.8k
+C3 Net-_C3-Pad1_ OUT 68p
+C2 GND Net-_C2-Pad2_ 220p
+R3 Net-_C1-Pad2_ Net-_C2-Pad2_ 6.8k
+V2 Net-_D1-Pad5_ GND dc 3.3
+R8 GND OUT 1k
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 2.2u
+R2 Net-_C1-Pad1_ GND 100k
+R1 Net-_C1-Pad1_ Net-_R1-Pad2_ 100
+V1 Net-_R1-Pad2_ GND dc 0 ac 1 sin(0 1 1k)
+.control
+ac dec 1000 1 1meg
+plot vdb(OUT)
+.endc
+.end
