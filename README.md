@@ -25,6 +25,6 @@
 
 ![3D bot](dual-mcp3201-pmod-3d-bot.png)
 
-АЧХ антиалиасинговых фильров:
+АЧХ антиалиасинговых фильтров:
 
 ![Filter Bode plot](filter-bode.png)
