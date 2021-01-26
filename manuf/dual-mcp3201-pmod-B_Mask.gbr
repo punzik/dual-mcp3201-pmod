@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,5.1.9*%
-%TF.CreationDate,2021-01-25T14:22:29+03:00*%
+%TF.CreationDate,2021-01-26T07:43:01+03:00*%
 %TF.ProjectId,dual-mcp3201-pmod,6475616c-2d6d-4637-9033-3230312d706d,rev?*%
 %TF.SameCoordinates,PX4c4b400PY8583b00*%
 %TF.FileFunction,Soldermask,Bot*%
 %TF.FilePolarity,Negative*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 5.1.9) date 2021-01-25 14:22:29*
+G04 Created by KiCad (PCBNEW 5.1.9) date 2021-01-26 07:43:01*
 %MOMM*%
 %LPD*%
 G01*
