@@ -1,8 +1,8 @@
 Reference, Quantity, Value, Footprint, Datasheet, Description, Package, PartNumber, Spice_Lib_File, Spice_Model, Spice_Netlist_Enabled, Spice_Node_Sequence, Spice_Primitive, Tolerance, Type, Voltage
-C1 C8 ,2,"68p","Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder","","SMD Ceramic Capacitor NP0","0603","-","","","","","","-","NP0","50V"
+C1 C8 ,2,"680p","Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder","","SMD Ceramic Capacitor NP0","0603","-","","","","","","-","NP0","50V"
 C7 C14 ,2,"10u","Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder","","SMD Tantalum Capacitor","A-CASE","293D106X9010A2TE3","","","","","","-","Tantalum","10V"
 C2 C4 C9 C11 ,4,"2.2u","Capacitor_Tantalum_SMD:CP_EIA-3216-18_Kemet-A_Pad1.58x1.35mm_HandSolder","","SMD Tantalum Capacitor","A-CASE","293D225X9010A2TE3","","","","","","-","Tantalum","10V"
-C3 C10 ,2,"220p","Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder","","SMD Ceramic Capacitor NP0","0603","-","","","","","","-","NP0","50V"
+C3 C10 ,2,"2200p","Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder","","SMD Ceramic Capacitor NP0","0603","-","","","","","","-","NP0","50V"
 C5 C6 C12 C13 ,4,"0.1u","Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder","","SMD Ceramic Capacitor X7R","0603","-","","","","","","-","X7R","16V"
 D1 D3 ,2,"LMV721M5","Package_TO_SOT_SMD:SOT-23-5_HandSoldering","","OpAMP","SOT-23-5","LMV721M5","spice/lmv721.lib","lmv721","Y","3 4 1 5 2","X","","",""
 D2 D4 ,2,"MCP3201BI/SN","Package_SO:SOP-8_3.76x4.96mm_P1.27mm","","ADC","SO-8-150","MCP3201BI/SN","","","","","","","",""
