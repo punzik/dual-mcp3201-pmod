@@ -5,8 +5,8 @@ R7 GND Net-_D1-Pad3_ 10k
 R6 Net-_D1-Pad3_ Net-_D1-Pad5_ 10k
 R5 Net-_C2-Pad2_ Net-_C3-Pad1_ 9.1k
 R4 Net-_C2-Pad2_ OUT 6.8k
-C3 Net-_C3-Pad1_ OUT 68p
-C2 GND Net-_C2-Pad2_ 220p
+C3 Net-_C3-Pad1_ OUT 680p
+C2 GND Net-_C2-Pad2_ 2200p
 R3 Net-_C1-Pad2_ Net-_C2-Pad2_ 6.8k
 V2 Net-_D1-Pad5_ GND dc 3.3
 R8 GND OUT 1k
