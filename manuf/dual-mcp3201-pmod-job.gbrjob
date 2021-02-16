@@ -7,7 +7,7 @@
       "Application": "Pcbnew",
       "Version":     "5.1.9"
     },
-    "CreationDate":  "2021-01-26T07:43:01+03:00"
+    "CreationDate":  "2021-02-16T17:41:26+03:00"
   },
   "GeneralSpecs":
   {
@@ -55,11 +55,6 @@
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "dual-mcp3201-pmod-B_Paste.gbr",
-      "FileFunction":  "SolderPaste,Bot",
-      "FilePolarity":  "Positive"
-    },
-    {
       "Path":  "dual-mcp3201-pmod-F_SilkS.gbr",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
@@ -77,6 +72,11 @@
     {
       "Path":  "dual-mcp3201-pmod-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "dual-mcp3201-pmod-F_Fab.gbr",
+      "FileFunction":  "AssemblyDrawing,Top",
       "FilePolarity":  "Positive"
     }
   ],
@@ -110,10 +110,6 @@
     {
       "Type":  "SolderMask",
       "Notes":  "Layer B.Mask"
-    },
-    {
-      "Type":  "SolderPaste",
-      "Notes":  "Layer B.Paste"
     }
   ]
 }

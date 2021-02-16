@@ -1,4 +1,4 @@
-update=Sun 24 Jan 2021 05:06:24 PM MSK
+update=Tue 16 Feb 2021 05:25:22 PM MSK
 version=1
 last_client=kicad
 [cvpcb]
@@ -10,16 +10,6 @@ LibDir=
 [eeschema/libraries]
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=gost_landscape.kicad_wks
-PlotDirectoryName=
-SubpartIdSeparator=46
-SubpartFirstId=49
-NetFmtName=Spice
-SpiceAjustPassiveValues=0
-LabSize=50
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -77,7 +67,7 @@ OthersTextItalic=0
 OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
-SolderPasteClearance=0
+SolderPasteClearance=-0.09999999999999999
 SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
@@ -257,3 +247,13 @@ uViaDrill=0.1
 dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
+[schematic_editor]
+version=1
+PageLayoutDescrFile=gost_landscape.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=46
+SubpartFirstId=49
+NetFmtName=Spice
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
